@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include "Resource.cpp"
+#include "Header.hpp"
 
 using namespace std;
 
@@ -8,7 +8,6 @@ bool running = true;
 
 int main()
 {
-    
     while(running == true){
         double a, b, c, delta, root1, root2;
         bool complexAnswer=false;
@@ -31,7 +30,6 @@ int main()
         }else{
             cout << "\nError: the coeficient \"a\" cannot be = 0";
         }
-        
         restart(&running);
     }
 }
